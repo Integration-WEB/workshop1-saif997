@@ -162,6 +162,9 @@ ________________________
 
 .item1{
     background-color: rgb(255, 190, 225);
+    position: sticky;
+    top: 50px;
+    left: 50px; 
 }
 
 .item2{
@@ -190,7 +193,15 @@ ________________________
     margin: 10px;
     font-size: 25px;
 }
-
+.font__1em {
+    font-size: 2em;
+    }
+    .font__1rem {
+    font-size: 1rem;
+    }
+    .font__100percent {
+    font-size: 100%;
+}
 
 /*
 ________________________
@@ -202,6 +213,14 @@ ________________________
     justify-content: center;
     align-items: center;
 }
+/*
+
+        game solution  
+
+flex-flow: column-reverse wrap-reverse;
+justify-content: center;
+align-content : space-between;
+*/ 
 
 /*
 ________________________
@@ -215,10 +234,19 @@ ________________________
     background-color: var(--primary-100);
 }
 /* Extra small devices (phones, 600px and down) */
-
+@media screen and (max-width: 600px){
+    .media__container{
+        background-color: var(--primary-100);
+    }
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px){
+    .media__container{
+        background-color: var(--primary-200);
+    }
+}
 
 
 
